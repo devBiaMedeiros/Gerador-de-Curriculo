@@ -1,17 +1,83 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  background: #18122b;
+  color: #fff;
 }
 
+.container {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+}
 
+.formulario {
+  background: #231942;
+  color: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  min-width: 380px;
+}
 
+label, h2, h3 {
+  color: #240547;
+}
+
+input, textarea {
+  background: #c386fc;
+  color: #fff;
+  border: 1px solid #6c47c2;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #1c0135;
+  opacity: 1;
+}
+
+input:focus, textarea:focus {
+  border: 1.5px solid #b497d6;
+  outline: none;
+}
+
+button, .btn {
+  background: #3a1072;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.cv-preview {
+  background: #ba92e9;
+  color: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  min-width: 400px;
+  border: 1.5px solid #6c47c2;
+}
+
+.cv-preview h2, .cv-preview h3 {
+  color: #b497d6;
+}
+
+.cv-preview p, .cv-preview span {
+  color: #e3d7f7;
+  font-size: 1rem;
+}
+
+/* Ajuste da margem */
+.cv-preview {
+  margin-top: 0;
+}
+body.dark {
+  background-color: #1d0136;
+  color: #fff;
+}
+
+body.light {
+  background-color: #fff;
+  color: #1d0136;
+}
