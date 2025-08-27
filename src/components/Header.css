@@ -1,0 +1,51 @@
+.top-header {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f5f4f7;
+  border-radius: 16px;
+  box-shadow: 0 0 24px #27046b;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px 0;
+}
+
+.top-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  color: #240244;
+  font-weight: bold;
+}
+
+.ai-title {
+  color: #240244;
+  font-weight: bold;
+}
+
+.project-desc {
+  color: #a24cf1;
+  font-size: 1rem;
+  margin-left: 12px;
+}
+
+.export-btn {
+  background: #3a1072;
+  color: #fdfcfd;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 6px #b497d6;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.export-btn:hover {
+  background: #f5eaff;
+}

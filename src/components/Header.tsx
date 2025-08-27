@@ -1,0 +1,24 @@
+import React from "react";
+import "./Header.css";
+
+type HeaderProps = {
+  onExportPDF: () => void;
+};
+
+export default function Header({ onExportPDF }: HeaderProps) {
+  return (
+    <div className="top-header">
+      <div className="top-header-left">
+        <span className="project-title">
+          <strong>Gerador de Currículos <span className="ai-title">AI</span></strong>
+        </span>
+        <span className="project-desc">
+          Gerar Inteligentemente seu Currículo com IA
+        </span>
+      </div>
+      <button className="export-btn" onClick={onExportPDF}>
+        Exportar PDF
+      </button>
+    </div>
+  );
+}
