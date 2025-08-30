@@ -10,6 +10,13 @@
   margin: 32px 0;
 }
 
+@media screen and (max-width: 428px) {
+  .top-header {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
 .top-header-left {
   display: flex;
   align-items: center;
