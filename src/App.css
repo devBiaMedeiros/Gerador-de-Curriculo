@@ -23,10 +23,10 @@
 
 }
  */
-.form-section h2 {
+/*.form-section h2 {
  /*  margin-bottom: 15px;
   color: #24034b; */
-}
+/*}
 
 /* Inputs e textareas */
 input,
@@ -104,3 +104,14 @@ textarea {
   margin: 5px 0;
   color: #2a0244;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .preview-data-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
