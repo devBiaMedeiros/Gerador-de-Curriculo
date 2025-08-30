@@ -1,4 +1,4 @@
-import "./HeaderContent.css"
+import "./styles/HeaderContent.css"
 type HeaderContentProps={
     titulo:string;
     content:string;

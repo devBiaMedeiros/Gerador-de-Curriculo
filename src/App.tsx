@@ -4,7 +4,7 @@ import DadosPessoais from "./components/DadosPessoais";
 import Habilidades from "./components/Habilidades";
 import Experiencia from "./components/Experiencia";
 import Preview from "./components/Preview";
-import jsPDF from "jspdf";
+import { jsPDF } from "jspdf";
 import "./App.css"; 
 
 function App() {

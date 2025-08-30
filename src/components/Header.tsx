@@ -1,5 +1,4 @@
-import React from "react";
-import "./Header.css";
+import "./styles/Header.css";
 
 type HeaderProps = {
   onExportPDF: () => void;
