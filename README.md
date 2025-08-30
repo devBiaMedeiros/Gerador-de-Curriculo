@@ -43,12 +43,4 @@ HTML | 	Estrutura de páginas
 CSS3 | 	Estilos vibrantes e responsivos
 
 
-Marca registrada do Grupo Debbugers: ✨ inovação na usabilidade
-👥 Time Grupo Debbugers 
-
- ° Paula Azevêdo 
- ° Beatriz Medeiros
- ° Vitória Mignon
- ° Vitória Marques
- ° Dayana Miranda 
- ° Matheus Sousa 
+Marca registrada do Grupo Debbugers: ✨ inovação na usabilidade 
