@@ -51,8 +51,6 @@ function App() {
       <div className="container">
         <div className="form-section">
           <DadosPessoais onChange={handleChange} />
-          <Habilidades onChange={handleChange} />
-          <Experiencia onChange={handleChange} />
         </div>
         <div className="preview-section">
           <Preview dados={curriculo} />

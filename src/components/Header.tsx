@@ -1,4 +1,5 @@
 import "./styles/Header.css";
+import { LucideFileUser } from "lucide-react";
 
 type HeaderProps = {
   onExportPDF: () => void;
@@ -16,7 +17,7 @@ export default function Header({ onExportPDF }: HeaderProps) {
         </span> */}
       </div>
       <button className="export-btn" onClick={onExportPDF}>
-        Exportar PDF
+        <LucideFileUser /> Exportar PDF
       </button>
     </div>
   );

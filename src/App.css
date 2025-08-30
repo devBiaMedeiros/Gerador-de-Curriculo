@@ -5,20 +5,27 @@
   background-color: #f8f9fa;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+  border-radius: 8px;
+  
 }
 
 /* Coluna do formulário */
 .form-section {
-  flex: 1;
+  width: 100%;
+}
+/* .dados-pessoais{
   background: #ffffff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
+  height: 300px;
+  overflow-y: scroll;
 
+}
+ */
 .form-section h2 {
-  margin-bottom: 15px;
-  color: #24034b;
+ /*  margin-bottom: 15px;
+  color: #24034b; */
 }
 
 /* Inputs e textareas */
@@ -40,26 +47,57 @@ textarea {
 
 /* Coluna do Preview */
 .preview-section {
-  flex: 1;
+  width: 100%;
 }
 
-.preview-section div {
+.preview-content, .dados-pessoais {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 300px;
   background: #ffffff;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 0px 0px 8px 8px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
+/*Separation*/
+.separator{
+  content: "";
+  width: 100%;
+  background-color: #000;
+  height: 3px;
+  margin: 16px;
 
+}
+.preview-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.preview-data-info{
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 12px;
+}
+.preview-data-info p{
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
 /* Textos no preview */
 .preview-section h2 {
   margin-bottom: 5px;
   color: #1d023b;
 }
 
-.preview-section h3 {
+ h3 {
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 16px;
   color: #310350;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
 }
 
 .preview-section p {

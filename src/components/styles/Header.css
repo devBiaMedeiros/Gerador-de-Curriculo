@@ -44,6 +44,10 @@
   box-shadow: 0 0 6px #b497d6;
   cursor: pointer;
   transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .export-btn:hover {

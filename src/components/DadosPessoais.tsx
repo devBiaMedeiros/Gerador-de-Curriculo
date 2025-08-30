@@ -1,4 +1,5 @@
-import { User } from "lucide-react";
+import { User, Briefcase,
+Wrench } from "lucide-react";
 import HeaderContent from "./HeaderContent";
 
 type Props = {
@@ -9,27 +10,43 @@ export default function DadosPessoais({ onChange }: Props) {
   return (
    <div>
       <HeaderContent titulo="Informações do Currículo" content="Preencha os dados e veja o preview em tempo real" bgColor="#25034b2e"/>
-      <h3>< User/>Dados Pessoais</h3>
-      <input 
-        type="text" 
-        placeholder="Nome Completo" 
-        onChange={(e) => onChange("nome", e.target.value)} 
-      />
-      <input 
-        type="email" 
-        placeholder="Email" 
-        onChange={(e) => onChange("email", e.target.value)} 
-      />
-      <input 
-        type="text" 
-        placeholder="Telefone" 
-        onChange={(e) => onChange("telefone", e.target.value)} 
-      />
-      <input 
-        type="text" 
-        placeholder="LinkedIn" 
-        onChange={(e) => onChange("linkedin", e.target.value)} 
-      />
+      <div className="dados-pessoais">
+        <h3>< User/> Dados Pessoais</h3>
+        <input 
+          type="text" 
+          placeholder="Nome Completo" 
+          onChange={(e) => onChange("nome", e.target.value)} 
+        />
+        <input 
+          type="email" 
+          placeholder="Email" 
+          onChange={(e) => onChange("email", e.target.value)} 
+        />
+        <input 
+          type="text" 
+          placeholder="Telefone" 
+          onChange={(e) => onChange("telefone", e.target.value)} 
+        />
+        <input 
+          type="text" 
+          placeholder="LinkedIn" 
+          onChange={(e) => onChange("linkedin", e.target.value)} 
+        />
+        <div>
+          <h3><Wrench /> Habilidades</h3>
+          <textarea 
+            placeholder="Liste suas habilidades" 
+            onChange={(e) => onChange("habilidades", e.target.value)} 
+          />
+        </div>
+          <div>
+            <h3><Briefcase /> Experiência Profissional</h3>
+            <textarea 
+              placeholder="Descreva sua experiência profissional" 
+              onChange={(e) => onChange("experiencia", e.target.value)} 
+            />
+          </div>
+      </div>
     </div>
   );
 }

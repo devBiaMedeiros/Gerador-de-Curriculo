@@ -1,6 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background: #18122b;
   color: #fff;
+  overflow: hidden;
+  height: 100%;
 }
 
 .container {

@@ -7,7 +7,7 @@ type HeaderContentProps={
 export default function HeaderContent({titulo, content, bgColor}:HeaderContentProps){
     return(
         <div className="inicio" style={{backgroundColor:bgColor}}>
-            <h2>{titulo}</h2>
+            <h1>{titulo}</h1>
             <span>{content}</span>
         </div>
     )
