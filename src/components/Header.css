@@ -34,7 +34,7 @@
 }
 
 .export-btn {
-  background: #3a1072;
+  background: #1d0136;
   color: #fdfcfd;
   border: none;
   border-radius: 8px;
@@ -43,9 +43,9 @@
   font-weight: bold;
   box-shadow: 0 0 6px #b497d6;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.2s;
 }
 
 .export-btn:hover {
-  background: #f5eaff;
+  opacity: 0.8;
 }

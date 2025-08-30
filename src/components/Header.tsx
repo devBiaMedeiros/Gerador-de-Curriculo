@@ -10,11 +10,11 @@ export default function Header({ onExportPDF }: HeaderProps) {
     <div className="top-header">
       <div className="top-header-left">
         <span className="project-title">
-          <strong>Gerador de Currículos <span className="ai-title">AI</span></strong>
+          <strong>Gerador de Currículos <span className="ai-title"></span></strong>
         </span>
-        <span className="project-desc">
-          Gerar Inteligentemente seu Currículo com IA
-        </span>
+        {/* <span className="project-desc">
+          Gerar Inteligentemente seu Currículo
+        </span> */}
       </div>
       <button className="export-btn" onClick={onExportPDF}>
         Exportar PDF

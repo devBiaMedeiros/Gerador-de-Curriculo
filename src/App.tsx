@@ -4,10 +4,7 @@ import DadosPessoais from "./components/DadosPessoais";
 import Habilidades from "./components/Habilidades";
 import Experiencia from "./components/Experiencia";
 import Preview from "./components/Preview";
-
 import jsPDF from "jspdf";
-import html2canvas from "html2canvas";
-
 import "./App.css"; 
 
 function App() {
@@ -24,18 +21,28 @@ function App() {
     setCurriculo({ ...curriculo, [campo]: valor });
   };
 
-  const exportPDF = () => {
-    const input = document.getElementById("curriculo-preview");
-    if (input) {
-      html2canvas(input).then((canvas: HTMLCanvasElement) => {
-        const imgWidth = 208; // largura para o pdf A4
-        const imgHeight = (canvas.height * imgWidth) / canvas.width;
-        const imgData = canvas.toDataURL("image/png");
-        const pdf = new jsPDF("p", "mm", "a4");
-        pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
-        pdf.save("curriculo.pdf");
-      });
-    }
+   const exportPDF = () => {
+    const pdf = new jsPDF();
+
+    pdf.setFontSize(22);
+    pdf.text(curriculo.nome || "Seu Nome Completo", 20, 20);
+
+    pdf.setFontSize(12);
+    pdf.text(`Email: ${curriculo.email || "seu.email@exemplo.com"}`, 20, 30);
+    pdf.text(`Telefone: ${curriculo.telefone || "(00) 00000-0000"}`, 20, 40);
+    pdf.text(`LinkedIn: ${curriculo.linkedin || "LinkedIn"}`, 20, 50);
+
+    pdf.setFontSize(16);
+    pdf.text("Habilidades", 20, 70);
+    pdf.setFontSize(12);
+    pdf.text(curriculo.habilidades || "Lista de habilidades", 20, 80);
+
+    pdf.setFontSize(16);
+    pdf.text("Experiência", 20, 100);
+    pdf.setFontSize(12);
+    pdf.text(curriculo.experiencia || "Descrição da experiência", 20, 110);
+
+    pdf.save("curriculo.pdf");
   };
 
   return (
@@ -43,7 +50,6 @@ function App() {
       <Header onExportPDF={exportPDF} />
       <div className="container">
         <div className="form-section">
-          <h2>Informações do Currículo</h2>
           <DadosPessoais onChange={handleChange} />
           <Habilidades onChange={handleChange} />
           <Experiencia onChange={handleChange} />

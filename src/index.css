@@ -22,8 +22,8 @@ label, h2, h3 {
 }
 
 input, textarea {
-  background: #c386fc;
-  color: #fff;
+  background:#e9e2f0;
+  color: #1f1f1f;
   border: 1px solid #6c47c2;
   border-radius: 8px;
   padding: 10px;
@@ -38,16 +38,6 @@ input::placeholder, textarea::placeholder {
 input:focus, textarea:focus {
   border: 1.5px solid #b497d6;
   outline: none;
-}
-
-button, .btn {
-  background: #3a1072;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  margin-top: 16px;
-  font-weight: bold;
 }
 
 .cv-preview {
