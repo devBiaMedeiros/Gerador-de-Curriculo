@@ -1,6 +1,6 @@
 # Gerador de Currículo | Grupo Debbugers
 
-<img src="https://www.webmobilefirst.com/en/screencasts/okp1xewkuxw-xy/" alt="Gif mostrando o projeto">
+<img src="screenshot.png" alt="Imagem mostrando o projeto">
 
 > Gerador de Currículo é uma aplicação interativa e dinâmica, desenvolvida com React pelo Grupo Debuggers como parte do curso Desenvolve. Nossa ferramenta foi criada para simplificar a criação de currículos profissionais, oferecendo uma experiência de usuário fluida e intuitiva.
 
