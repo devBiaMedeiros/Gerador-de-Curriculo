@@ -1,0 +1,112 @@
+.list{
+    margin-bottom: 10px;
+}
+.list-title{
+    margin: 0px 0px 10px;
+    color: #310350;
+    font-weight: 100;
+}
+.list-add{
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 4px;
+    align-items: center;
+}
+.list-btn-add{
+    padding: 8PX 12PX;
+    background: #2a0244;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    height: fit-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+}
+.list-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f3f3f3;
+    margin: 0.5rem 0rem;
+    border-radius: 8px;
+    color: #2a0244;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.list-btn-remove{
+   border: 0;
+    color: #a30808;
+}
+.list-background{
+    padding: 1rem;
+    background:#f8f9fa; 
+    border-radius:8px; 
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+}
+.list-grid{
+    display: grid; 
+    gap: 0.75rem; 
+}
+.list-grid-date{
+     display: flex; 
+     gap: 0.5rem; 
+     align-items: center;
+}
+.list-grid-date-item{
+    flex: 1;
+}
+.list-grid-date-item label{
+    font-size: 0.875rem;
+    display: block; 
+    margin-bottom: 0.25rem;
+}
+.list-grid-date-item input{
+    padding: 0.5rem; 
+    width: 100%;
+}
+input[type="checkbox"]{
+    width: fit-content;
+    cursor: pointer;
+}
+.botao-ia {
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  transition: all 0.3s ease;
+  width: 100%;
+  justify-content: center;
+}
+
+.botao-ia:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.botao-ia:disabled {
+  cursor: not-allowed;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 428px) {
+    .list-grid-date {
+    align-items: center;
+    flex-direction: column;
+}
+  .list-grid-date-item input {
+    padding: 0.5rem;
+    width: 245px !important;
+    text-align: center;
+}
+    
+}
+@media screen and (max-width: 320px) {
+
+  .list-grid-date-item input {
+    width: 210px !important;
+  }
+    
+}
