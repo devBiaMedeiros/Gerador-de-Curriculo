@@ -14,7 +14,7 @@ Cadastro e edição de informações pessoais e experiências
 
 Pré-visualização instantânea e opção de exportação do currículo em PDF
 
-Totalmente responsivo: funcione no celular e computador
+Totalmente responsivo: funciona no celular e computador
 
 Interface intuitiva usando React para máxima performance
 
