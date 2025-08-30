@@ -3,11 +3,11 @@
   background: #f5f4f7;
   border-radius: 16px;
   box-shadow: 0 0 24px #27046b;
-  padding: 20px 32px;
+  padding: 20px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 32px 0;
+  margin: 32px 20px;
 }
 
 @media screen and (max-width: 428px) {
@@ -24,9 +24,9 @@
 }
 
 .project-title {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #240244;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .ai-title {
@@ -59,4 +59,11 @@
 
 .export-btn:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 320px) {
+
+ .project-title {
+    font-size: 1.4rem;
+}
+    
 }

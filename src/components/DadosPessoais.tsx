@@ -1,53 +1,79 @@
-import { User, Briefcase,
-Wrench } from "lucide-react";
+import { User, Briefcase } from "lucide-react";
 import HeaderContent from "./HeaderContent";
+import Habilidades from "./Habilidades";
+import ExperienciaProfissional from "./Experiencia";
 
+// 1. Atualize o tipo Props
 type Props = {
-  onChange: (campo: string, valor: string) => void;
+  onChange: (campo: string, valor: string | string[]) => void;
+  dados: {
+    nome: string;
+    email: string;
+    telefone: string;
+    linkedin: string;
+    habilidades: string[];
+    experiencia: string;
+  };
 };
 
-export default function DadosPessoais({ onChange }: Props) {
+// Adicione a interface Experiencia aqui também
+interface Experiencia {
+  id: string;
+  empresa: string;
+  cargo: string;
+  dataInicio: string;
+  dataFim: string;
+  descricao: string;
+}
+
+export default function DadosPessoais({ onChange, dados }: Props) {
   return (
-   <div>
-      <HeaderContent titulo="Informações do Currículo" content="Preencha os dados e veja o preview em tempo real" bgColor="#25034b2e"/>
+    <div>
+      <HeaderContent 
+        titulo="Informações do Currículo" 
+        content="Preencha os dados e veja o preview em tempo real" 
+        bgColor="#25034b2e"
+      />
       <div className="dados-pessoais">
-        <h3>< User/> Dados Pessoais</h3>
+        <h3><User /> Dados Pessoais</h3>
         <input 
           type="text" 
           placeholder="Nome Completo" 
+          value={dados.nome}
           onChange={(e) => onChange("nome", e.target.value)} 
         />
         <input 
           type="email" 
           placeholder="Email" 
+          value={dados.email}
           onChange={(e) => onChange("email", e.target.value)} 
         />
         <input 
           type="text" 
           placeholder="Telefone" 
+          value={dados.telefone}
           onChange={(e) => onChange("telefone", e.target.value)} 
         />
         <input 
           type="text" 
           placeholder="LinkedIn" 
+          value={dados.linkedin}
           onChange={(e) => onChange("linkedin", e.target.value)} 
         />
+        
+        {/* 2. SUBSTITUA o textarea pelo componente Habilidades */}
+        <Habilidades 
+          onChange={onChange}
+          habilidades={dados.habilidades}
+        />
+        
         <div>
-          <h3><Wrench /> Habilidades</h3>
-          <textarea 
-            placeholder="Liste suas habilidades" 
-            onChange={(e) => onChange("habilidades", e.target.value)} 
+         <ExperienciaProfissional 
+            onChange={onChange}
+            experiencias={dados.experiencias || []}
           />
         </div>
-          <div>
-            <h3><Briefcase /> Experiência Profissional</h3>
-            <textarea 
-              placeholder="Descreva sua experiência profissional" 
-              onChange={(e) => onChange("experiencia", e.target.value)} 
-            />
-          </div>
       </div>
     </div>
   );
 }
-      

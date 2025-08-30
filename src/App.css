@@ -51,9 +51,7 @@ textarea {
 }
 
 .preview-content, .dados-pessoais {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  height: 300px;
+  height: fit-content;
   background: #ffffff;
   padding: 20px;
   border-radius: 0px 0px 8px 8px;
@@ -65,7 +63,6 @@ textarea {
   width: 100%;
   background-color: #000;
   height: 3px;
-  margin: 16px;
 
 }
 .preview-content{
@@ -103,6 +100,11 @@ textarea {
 .preview-section p {
   margin: 5px 0;
   color: #2a0244;
+}
+
+ul {
+    color: #2a0244;
+    padding-left: 50px;
 }
 
 @media screen and (max-width: 768px) {
