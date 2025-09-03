@@ -19,8 +19,10 @@
 
 .top-header-left {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 8px;
 }
 
 .project-title {
@@ -35,10 +37,15 @@
 }
 
 .project-desc {
-  color: #a24cf1;
-  font-size: 1rem;
+   color: #27046b;
+  font-size: 1.2rem;     
   margin-left: 12px;
+  font-style: italic;     
+  font-weight: 500; 
+  margin-right: 8px;
+
 }
+
 
 .export-btn {
   background: #1d0136;

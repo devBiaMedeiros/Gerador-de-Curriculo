@@ -100,6 +100,18 @@ export default function Preview({ dados }: Props) {
           <p>Suas experiências profissionais aparecerão aqui conforme você adiciona...</p>
         )}
       </div>
+      <div>
+         <a
+        className="export-btn"
+        href="https://www.linkedin.com/sharing/share-offsite/?url=https://seusite.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ marginLeft: "8px" }}>
+        <span style={{ fontSize: "1.3rem" }}>🔗</span> Compartilhar LinkedIn
+      </a>
+      </div>
+      
+
     </div>
   );
 }

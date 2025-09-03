@@ -5,14 +5,14 @@ import ExperienciaProfissional from "./Experiencia";
 
 // 1. Atualize o tipo Props
 type Props = {
-  onChange: (campo: string, valor: string | string[]) => void;
+  onChange: (campo: string, valor: string | string[] | Experiencia[]) => void;
   dados: {
     nome: string;
     email: string;
     telefone: string;
     linkedin: string;
     habilidades: string[];
-    experiencia: string;
+    experiencia: Experiencia[];
   };
 };
 
@@ -38,19 +38,19 @@ export default function DadosPessoais({ onChange, dados }: Props) {
         <h3><User /> Dados Pessoais</h3>
         <input 
           type="text" 
-          placeholder="Nome Completo" 
+          placeholder="Nome Completo *" 
           value={dados.nome}
           onChange={(e) => onChange("nome", e.target.value)} 
         />
         <input 
           type="email" 
-          placeholder="Email" 
+          placeholder="Email *" 
           value={dados.email}
           onChange={(e) => onChange("email", e.target.value)} 
         />
         <input 
           type="text" 
-          placeholder="Telefone" 
+          placeholder="Telefone *" 
           value={dados.telefone}
           onChange={(e) => onChange("telefone", e.target.value)} 
         />
@@ -70,7 +70,7 @@ export default function DadosPessoais({ onChange, dados }: Props) {
         <div>
          <ExperienciaProfissional 
             onChange={onChange}
-            experiencias={dados.experiencias || []}
+            experiencias={dados.experiencia}
           />
         </div>
       </div>
