@@ -49,7 +49,7 @@ export default function MelhoriaIA({ texto, onTextoMelhorado, tipo }: Props) {
       'php': ['Laravel', 'WordPress', 'Composer']
     };
 
-    // Encontra habilidades relacionadas
+    // Encontra habilidades relacionadasreact, TypeScript
     let novaHabilidade = texto;
     
     Object.entries(habilidadesRelacionadas).forEach(([key, values]) => {
