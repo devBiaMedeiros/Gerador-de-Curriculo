@@ -12,7 +12,7 @@ type Props = {
     telefone: string;
     linkedin: string;
     habilidades: string[];
-    experiencia: Experiencia[];
+    experiencias: Experiencia[];
   };
 };
 
@@ -70,7 +70,7 @@ export default function DadosPessoais({ onChange, dados }: Props) {
         <div>
          <ExperienciaProfissional 
             onChange={onChange}
-            experiencias={dados.experiencia}
+            experiencias={dados.experiencias}
           />
         </div>
       </div>
