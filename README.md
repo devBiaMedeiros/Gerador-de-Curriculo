@@ -1,6 +1,8 @@
 # Gerador de Currículo | Grupo Debbugers
 
-<img src="screenshot.png" alt="Imagem mostrando o projeto">
+
+https://github.com/user-attachments/assets/dbf8d756-698b-416c-92d9-00de097f5ef4
+
 
 > Gerador de Currículo é uma aplicação interativa e dinâmica, desenvolvida com React pelo Grupo Debuggers como parte do curso Desenvolve. Nossa ferramenta foi criada para simplificar a criação de currículos profissionais, oferecendo uma experiência de usuário fluida e intuitiva.
 
@@ -8,7 +10,7 @@
 
 Para usar Gerador de Currículo | Grupo Debbugers, acesse:
 
-https://gerador-de-curriculo-5zq5.vercel.app/
+https://gerador-de-curriculo-w5dj.vercel.app/
 
 ## ✨  Funcionalidades Principais Cadastro e edição de informações pessoais e experiências
 
