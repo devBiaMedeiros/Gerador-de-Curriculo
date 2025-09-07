@@ -1,5 +1,5 @@
 import "./styles/Header.css";
-import { LucideBolt, LucideBot, LucideFileUser, LucideWandSparkles } from "lucide-react";
+import {LucideBot, LucideFileUser} from "lucide-react";
 
 type HeaderProps = {
   onExportPDF: () => void;

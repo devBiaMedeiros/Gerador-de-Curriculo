@@ -1,4 +1,4 @@
-import { User, Briefcase } from "lucide-react";
+import { User } from "lucide-react";
 import HeaderContent from "./HeaderContent";
 import Habilidades from "./Habilidades";
 import ExperienciaProfissional from "./Experiencia";
